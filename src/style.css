@@ -1,0 +1,25 @@
+.bg-custome-img {
+  background-image: url("assets/images/webCovers/river.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gradient-green {
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+  background: linear-gradient(to right, #99f2c8, #1f4037);
+}
+
+.transition-background {
+    transition:0.3s ease-in;
+  }
+  
+.img-down-animation{
+
+    animation:arrowBlink 3s infinite;
+}
+@keyframes arrowBlink {
+    100%{
+        opacity: 0;
+    }
+}
