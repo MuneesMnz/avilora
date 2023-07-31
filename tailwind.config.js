@@ -2,8 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors:{
-      darkGreen:"#40513B"
+    colors: {
+      darkGreen: "#103014",
+      lightGreen: "#40513B",
     },
 
     extend: {
