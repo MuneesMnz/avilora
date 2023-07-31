@@ -5,21 +5,29 @@
 }
 
 .gradient-green {
-  background: #1f4037;
-  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-  background: linear-gradient(to right, #99f2c8, #1f4037);
+  background: rgb(0,94,38);
+  background: linear-gradient(299deg, rgba(0,94,38,0.9) 0%, rgba(27,190,100,0.9) 83%);
+}
+
+.gradient-blue {
+  background: rgb(0, 0, 150);
+  background: linear-gradient(
+    299deg,
+    rgba(0, 0, 150, 1) 0%,
+    rgba(3, 124, 205, 1) 88% 
+  );
+ 
 }
 
 .transition-background {
-    transition:0.3s ease-in;
-  }
-  
-.img-down-animation{
+  transition: 0.3s ease-in;
+}
 
-    animation:arrowBlink 3s infinite;
+.img-down-animation {
+  animation: arrowBlink 3s infinite;
 }
 @keyframes arrowBlink {
-    100%{
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }

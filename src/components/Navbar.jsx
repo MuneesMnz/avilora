@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { navList } from "../data";
+import '../style.css'
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -23,8 +24,9 @@ const Navbar = () => {
     <>
       <div
         className={`fixed top-0 z-[999] w-full h-[60px] transition-background max-md:hidden ${
-          navbar ? "bg-darkGreen shadow-md " : "bg-transparent"
+          navbar ? " bg-[#103014ec] shadow-md " : "bg-transparent"
         } `}
+        // 
       >
         <ul
           className={`flex justify-end p-4 transition-background text-lg ${
