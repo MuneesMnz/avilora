@@ -15,6 +15,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };
 // url('./public/assets/images/webCovers/river.jpg')
