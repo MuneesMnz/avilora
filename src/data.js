@@ -4,7 +4,7 @@ export const navList = [
     link: "home",
   },
   {
-    name: "About",
+    name: "Star Icons",
     link: "about",
   },
   {
@@ -14,9 +14,5 @@ export const navList = [
   {
     name: "Gallery",
     link: "gallery",
-  },
-  {
-    name: "Contact us",
-    link: "contact",
   },
 ];
