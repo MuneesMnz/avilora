@@ -4,7 +4,7 @@ export const navList = [
     link: "home",
   },
   {
-    name: "Star Icons",
+    name: "About",
     link: "about",
   },
   {
@@ -12,9 +12,21 @@ export const navList = [
     link: "history",
   },
   {
+    name: "Star Icons",
+    link: "about",
+  },
+  {
     name: "Gallery",
     link: "gallery",
   },
+];
+
+export const coverImages = [
+  "/assets/images/webCovers/slide3.jpg",
+  "/assets/images/webCovers/slide2.jpg",
+  "/assets/images/webCovers/slide1.jpg",
+  "/assets/images/webCovers/river.jpg",
+
 ];
 
 export const homeSlider = [
