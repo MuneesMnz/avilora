@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { navList } from "../data";
-import '../style.css'
+import "../style.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -26,17 +27,25 @@ const Navbar = () => {
         className={`fixed top-0 z-[999] w-full h-[60px] transition-background max-md:hidden ${
           navbar ? " bg-[#103014ec] shadow-md " : "bg-transparent"
         } `}
-        // 
       >
         <ul
           className={`flex justify-end p-4 transition-background text-lg ${
             navbar ? "text-[white]" : "text-darkGreen"
-          } gap-10  font-semibold mr-14`}
+          } gap-10  mr-14`}
         >
           {navList.map((list) => {
             return (
               <li className="cursor-pointer" key={list.name}>
-                <a href={`#${list.link}`}>{list.name}</a>
+                <NavLink
+                  to={`/${list.link}`}
+                  className={({ isActive }) => {
+                    
+                    return isActive ? "font-bold " : "font-normal";
+                  }}
+                >
+                  <div>{list.name}</div>
+                  { ({isActive})=> isActive ? <div className="border border-b-2"></div> :<div className=""></div> }
+                </NavLink>
               </li>
             );
           })}
@@ -59,12 +68,12 @@ const Navbar = () => {
           <span
             className={`w-full h-[2px]  transition-background origin-left
             ${navbar || open ? "bg-[white]" : "bg-darkGreen "}
-            ${open ? "opacity-0"  : ""}  `}
+            ${open ? "opacity-0" : ""}  `}
           ></span>
           <span
             className={`w-full h-[2px]  transition-background origin-left
             ${navbar || open ? "bg-[white]" : "bg-darkGreen "}
-            ${open ?" -rotate-45 " : ""}  `}
+            ${open ? " -rotate-45 " : ""}  `}
           ></span>
         </div>
       </div>
@@ -81,9 +90,9 @@ const Navbar = () => {
                 key={item.name}
                 className="p-2 mt-2 text-center capitalize cursor-pointer duration-300 hover:bg-lightGreen "
               >
-                <a href={`#${item.link}`} onClick={() => setOpen(false)}>
+                <NavLink to={`/${item.link}`} onClick={() => setOpen(false)}>
                   {item.name}
-                </a>
+                </NavLink>
               </div>
             );
           })}

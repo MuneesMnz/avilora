@@ -1,7 +1,7 @@
 export const navList = [
   {
     name: "Home",
-    link: "home",
+    link: "",
   },
   {
     name: "About",
@@ -13,7 +13,7 @@ export const navList = [
   },
   {
     name: "Star Icons",
-    link: "about",
+    link: "staricons",
   },
   {
     name: "Gallery",

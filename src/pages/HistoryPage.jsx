@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router-dom";
 
 const HistoryPage = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Outlet/>
+    </>
+  );
+};
 
-export default HistoryPage 
+export default HistoryPage;
