@@ -5,7 +5,7 @@ import HistoryPageCotainer from "./HistoryPageCotainer";
 const HistoryHome = () => {
   return (
     <>
-      <PageHeading haeding="History"  />
+      <PageHeading heading="History"  />
 
       <div className="px-[100px] py-[50px] max-md:px-4 max-md:py-8 max-lg:p-[50px] ">
         {[0, 1, 2, 3, 4].map((val) => (
