@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       darkGreen: "#103014",
       lightGreen: "#40513B",
+      darkBlue: "#061529",
     },
 
     extend: {
@@ -14,6 +15,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };
 // url('./public/assets/images/webCovers/river.jpg')
